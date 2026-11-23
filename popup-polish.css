@@ -1,0 +1,32 @@
+.contact-dialog{width:min(940px,calc(100% - 36px));max-height:min(92vh,850px);padding:0;border:0;border-radius:8px;overflow:auto;background:#fff;box-shadow:0 32px 100px rgba(7,7,6,.38)}
+.contact-dialog[open]{display:grid;grid-template-columns:.78fr 1.22fr;animation:dialog-enter .3s cubic-bezier(.2,.8,.2,1)}
+.contact-dialog::backdrop{background:rgba(10,10,9,.7);backdrop-filter:blur(5px)}
+.dialog-aside{position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;justify-content:center;min-height:610px;padding:52px 42px;background:radial-gradient(circle at 95% 10%,rgba(201,155,61,.3),transparent 36%),linear-gradient(145deg,#29271f,#12110e);color:#f6f2e8}
+.dialog-aside:before{content:"";position:absolute;z-index:-1;right:-114px;bottom:-106px;width:310px;height:310px;border:1px solid rgba(225,189,115,.48);border-radius:50%;box-shadow:0 0 0 24px rgba(225,189,115,.045),0 0 0 50px rgba(225,189,115,.035)}
+.dialog-aside .section-kicker{font-size:10px;color:var(--gold-light);letter-spacing:.18em}
+.dialog-aside .section-kicker>span{background:var(--gold-light)}
+.dialog-aside h2{font:500 clamp(36px,4vw,52px)/1.08 var(--serif);letter-spacing:-.04em;color:#fff;margin:24px 0 18px;max-width:360px}
+.dialog-aside>p{color:#c8c2b5;font-size:15px;line-height:1.75;max-width:340px}
+.dialog-promise{display:flex;gap:14px;align-items:center;margin-top:42px;padding-top:18px;border-top:1px solid rgba(225,189,115,.35);color:#e9e2d4;font-size:13px;line-height:1.5}
+.dialog-promise b{color:var(--gold-light);font-size:12px;letter-spacing:.1em}
+.dialog-close{position:absolute;z-index:2;top:20px;right:20px;border:1px solid rgba(240,236,227,.34);background:rgba(255,255,255,.06);color:#fff;transition:background .2s,border-color .2s,transform .2s}
+.dialog-close:hover{background:rgba(255,255,255,.16);border-color:var(--gold-light);transform:rotate(90deg)}
+.contact-dialog .contact-form{align-content:start;display:grid;grid-template-columns:1fr 1fr;column-gap:15px;row-gap:0;padding:42px 42px 30px;background:#fff;box-shadow:none}
+.contact-dialog .contact-form h3{grid-column:1/-1;margin:0 0 9px;font:500 31px/1.12 var(--serif);letter-spacing:-.025em;color:#201f1b}
+.contact-dialog .contact-form>p{grid-column:1/-1;margin-bottom:22px;color:#6d6961;font-size:14px}
+.contact-dialog .contact-form label{margin-bottom:13px;font-size:11px;letter-spacing:.05em}
+.contact-dialog .contact-form input,.contact-dialog .contact-form select,.contact-dialog .contact-form textarea{padding:12px 13px;margin-top:7px;font-size:13px}
+.contact-dialog .contact-form .message-label,.contact-dialog .form-submit,.contact-dialog .form-status{grid-column:1/-1}
+.contact-dialog .contact-form textarea{min-height:84px}
+.contact-dialog .form-submit{margin-top:4px;padding:14px 17px}
+.contact-dialog .form-status{margin-top:10px}
+.contact-link{position:relative;transition:color .2s,border-color .2s,transform .2s}
+.contact-link:hover{color:#8c641b;border-color:#8c641b;transform:translateX(4px)}
+.contact-link span{transition:transform .2s}
+.contact-link:hover span{transform:translate(3px,-3px)}
+.section-reveal{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.section-reveal.reveal-ready{opacity:0;transform:translateY(20px)}
+.section-reveal.reveal-ready.is-visible{opacity:1;transform:translateY(0)}
+.nav-cta:focus-visible,.contact-link:focus-visible,.button:focus-visible,.dialog-close:focus-visible,.form-submit:focus-visible{outline:3px solid #9a6d20;outline-offset:4px}
+@media(max-width:720px){.contact-dialog{width:calc(100% - 24px);max-height:94vh}.contact-dialog[open]{grid-template-columns:1fr}.dialog-aside{min-height:0;padding:34px 22px 24px}.dialog-aside h2{font-size:34px;max-width:260px;margin:18px 0 11px}.dialog-aside>p{font-size:13px;line-height:1.55;margin-bottom:0;max-width:440px}.dialog-promise{display:none}.dialog-close{top:15px;right:15px;width:34px;height:34px}.contact-dialog .contact-form{grid-template-columns:1fr;row-gap:0;padding:24px 22px 24px}.contact-dialog .contact-form h3{font-size:28px}.contact-dialog .contact-form>p{margin-bottom:17px}.contact-dialog .contact-form .message-label,.contact-dialog .form-submit,.contact-dialog .form-status{grid-column:1}.section-reveal.reveal-ready{transform:translateY(12px)}}
+@media(prefers-reduced-motion:reduce){.contact-dialog[open]{animation:none}.section-reveal{transition:none}.section-reveal.reveal-ready{opacity:1;transform:none}.contact-link,.contact-link span,.dialog-close{transition:none}}

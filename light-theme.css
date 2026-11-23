@@ -1,0 +1,49 @@
+:root{--black:#f7f6f2;--panel:#fff;--cream:#1d1c19;--muted:#6b6861;--gold:#c99b3d;--gold-light:#8c641b;--line:#dedbd3}
+body{background:#f7f6f2;color:#1d1c19}
+.eyebrow-bar{background:#fff;color:#6d6961;border-color:#e8e5de}
+.site-header{background:#fff;border-bottom:1px solid #e8e5de}
+.brand-copy strong{color:#191815}
+.brand-copy small{color:#59564f}
+.main-nav>a:not(.nav-cta){color:#55524b}
+.nav-cta,.button-gold{background:var(--gold);color:#17140d}
+.hero{background:linear-gradient(90deg,rgba(15,15,13,.83) 0%,rgba(15,15,13,.7) 35%,rgba(15,15,13,.35) 63%,rgba(15,15,13,.08) 100%),linear-gradient(0deg,rgba(10,10,9,.45),transparent 50%),url("./2unsplash.jpg") center 48% / cover no-repeat}
+.hero h1{color:#fff}
+.hero h1 em{color:#e4bf72}
+.hero-content>p{color:#f0eee8}
+.hero-caption{color:rgba(255,255,255,.76)}
+.hero-actions .text-link{color:#fff}
+.approach{background:#fff;border-bottom-color:#e7e4dc}
+.approach h2,.section-heading h2,.industries h2,.technology h2{color:#1d1c19}
+.approach h2 em,.section-heading h2 em,.industries h2 em,.technology h2 em{color:var(--gold-light)}
+.approach-bottom{border-color:#dedbd3;color:#77736b}
+.services,.technology{background:#f0efeb}
+.service-list,.service-row{border-color:#d9d6ce}
+.service-name h3{color:#1d1c19}
+.service-name p{color:#6b6861}
+.tags span{color:#32302a;border-color:#d4d0c7;background:#fff}
+.industry-grid>div{border-color:#dedbd3}
+.industry-grid span{color:#24231f}
+.tech-card{background:#fff;border-color:#dedbd3}
+.tech-card h3{color:#1d1c19}
+.tech-card p{color:#6b6861}
+.tech-list li,.data-table>div,.other-tech-list>div,.data-table,.other-tech-list{border-color:#e5e2da}
+.tech-list b,.data-table>div span:first-child,.other-tech-list b{color:#2b2924}
+.tech-list span,.data-table>div span:last-child,.other-tech-list span{color:#6b6861}
+.tech-pills span{color:#34312b;border-color:#d7d3ca;background:#faf9f6}
+.contact{background:#eee9dc;color:#1d1c19}
+.contact .section-kicker{color:#8c641b}
+.contact .section-kicker>span{background:#8c641b}
+.contact h2{color:#1d1c19}
+.contact h2 em{color:#9a6d20}
+.contact-layout .contact-intro>p{color:#5e5a51}
+.contact-footnote{border-color:#d0c9b9;color:#706b60}
+.contact-form{background:#fff;box-shadow:14px -14px 0 -5px var(--gold)}
+.contact-form h3{color:#1d1c19}
+.contact-form>p{color:#6b6861}
+.contact-form label{color:#34312b}
+.contact-form input,.contact-form select,.contact-form textarea{background:#faf9f6;border-color:#d7d3ca;color:#1d1c19}
+.form-status{color:#805d1c}
+.site-footer{background:#1c1b18}
+.footer-motto,.copyright,.back-top{color:#fff}
+.menu-toggle span{background:#1d1c19}
+@media(max-width:720px){.main-nav{background:#fff;border-color:#e3e0d8}.hero{background-position:58% center}.contact-form{box-shadow:8px -8px 0 -3px var(--gold)}}

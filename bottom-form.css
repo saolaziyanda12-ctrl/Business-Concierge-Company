@@ -1,0 +1,4 @@
+.contact-form-inline{grid-column:2;grid-row:1;width:100%;align-self:center}
+.contact-layout>.contact-link{grid-column:2;grid-row:2;justify-self:stretch;width:100%;margin-top:0}
+.contact-form-inline .form-status{color:#805d1c}
+@media(max-width:720px){.contact-form-inline{grid-column:1;grid-row:auto;width:100%;padding:26px 21px}.contact-layout>.contact-link{grid-column:1;grid-row:auto;margin-top:0}}

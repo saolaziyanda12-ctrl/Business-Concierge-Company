@@ -1,0 +1,18 @@
+/* Softly blend each background into the next rather than ending in a hard band. */
+.approach{background:#fff}
+.services{background:linear-gradient(180deg,#fff 0,#f4f3ef 145px,#f0efeb 360px)}
+.industries{background:linear-gradient(180deg,#f0efeb 0,#f7f6f2 155px,#f7f6f2 calc(100% - 155px),#f0efeb 100%)}
+.technology{background:linear-gradient(180deg,#f0efeb 0,#f4f3ef 145px,#f0efeb calc(100% - 140px),#eee9dc 100%)}
+.contact{background:linear-gradient(180deg,#eee9dc 0,#f2eee5 130px,#eee9dc 100%)}
+.site-footer{border-top:1px solid rgba(201,155,61,.55)}
+.hero{position:relative}
+.hero:after{content:"";position:absolute;pointer-events:none;z-index:0;left:0;right:0;bottom:0;height:42px;background:linear-gradient(180deg,transparent,#f7f6f2)}
+.hero-content,.hero-caption{z-index:1}
+.service-row,.industry-grid>div,.tech-card,.contact-form{transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.2,1),border-color .25s ease,box-shadow .25s ease}
+.service-row:hover,.industry-grid>div:hover{border-color:var(--gold)}
+.tech-card:hover{transform:translateY(-3px);border-color:#c9aa6c;box-shadow:0 14px 30px rgba(24,22,18,.07)}
+.section-kicker{transition:color .25s ease}
+.service-row.reveal-ready,.industry-grid>div.reveal-ready,.tech-card.reveal-ready,.contact-form.reveal-ready{opacity:0;transform:translateY(18px)}
+.service-row.reveal-ready.is-visible,.industry-grid>div.reveal-ready.is-visible,.tech-card.reveal-ready.is-visible,.contact-form.reveal-ready.is-visible{opacity:1;transform:translateY(0)}
+@media(max-width:720px){.services{background:linear-gradient(180deg,#fff 0,#f0efeb 110px)}.industries{background:linear-gradient(180deg,#f0efeb 0,#f7f6f2 110px,#f0efeb 100%)}.technology{background:linear-gradient(180deg,#f0efeb 0,#f7f6f2 90px,#eee9dc 100%)}.hero:after{height:24px}.service-row:hover,.industry-grid>div:hover{border-color:inherit}.tech-card:hover{transform:none;box-shadow:none}}
+@media(prefers-reduced-motion:reduce){.service-row,.industry-grid>div,.tech-card,.contact-form{transition:none}.service-row.reveal-ready,.industry-grid>div.reveal-ready,.tech-card.reveal-ready,.contact-form.reveal-ready{opacity:1;transform:none}}
